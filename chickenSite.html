@@ -1,0 +1,119 @@
+<html>
+
+<style>
+#myPage{
+    width:100%;
+    height:100%;
+    margin: 2%;
+}
+
+#chickenPic{
+    /* border: 1px solid black; */
+    width:20%;
+    height:80%;
+    float:left;
+    margin: 2% 0% 0% 0%;
+}
+
+#chickenInfo{
+    border: 1px solid black;
+    width:50%;
+    height:80%;
+    float:left;
+    margin: 2% 0% 0% 2%;
+    
+}
+
+#chickenButtonContainer{
+    border: 1px solid black;
+    width:10%;
+    height:95%;
+    float:left;
+    margin: .5% 0% 0% 5%;
+}
+
+.myButton {
+                font-family: "Segoe UI", "Open Sans", sans-serif, Arial;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                cursor: pointer;
+                margin:1% 10%;
+                width:80%;
+}
+
+#roadIslandR{
+      background-color: #DF2929;  
+      border: 1px solid #FBA4A4;
+      
+}
+
+#brahmaChick{
+      background-color: lightgray;  
+        border: 1px solid slategrey;
+}
+
+#myCHInfo{
+    margin:2%;
+}
+
+.infoIsh{
+    margin-top:3%;
+}
+
+</style>
+
+
+<script>
+let rIRpic = "https://www.chickencoopguides.com/wp-content/uploads/2016/10/rhode-island-red-chicken-300x300.jpg";
+let rIRinfo = "<div id='myChInfo'><div class='infoIsh'> \"Docile Personality\" Rhode Island Red Chickens have a calm demeanor. They are generally docile and are perfect for family farmers.</div> <div class='infoIsh'> Top Egg Producer Rhode Island Red eggs are brown in color. Hens can produce between five and seven eggs per week. They are also an ideal chicken for meat.</div><div  class='infoIsh'> Distinguishing Look  In Rhode Island Red pictures, the chickens are a brownish red color. Their eyes are reddish orange, and their beak is reddish brown. Males reach about eight pounds when fully grown, and females grow to about six pounds.</div> <div  class='infoIsh'> Strong Adaptability to Weather This breed can thrive in almost any type of weather situation. They are known to do well in colder climates as well as warmer parts of the country.</div></div>";
+
+
+let bramPic = "https://livestockconservancy.org/wp-content/uploads/2021/06/brahma.jpg";
+let bramInfo = "Brahmas are large chickens with feathers on their yellow shanks and toes, pea comb, reddish-brown eyes, red earlobes, yellow beaks, smooth fitting plumage with dense down in all sections, and broad, wide head with skull projecting over the eyes termed \"beetle brow\". Their feathered legs appear like a narrow \"V\" if viewed from the side. They can be up to 30\" tall. The mature slowly. They come in three color varieties - the Light, the Dark, and the Buff.";
+
+
+function roadIsland(){
+    
+    document.getElementById("chickenInfo").innerHTML = rIRinfo;
+    document.getElementById("chickenPic").innerHTML = "<img src='" + rIRpic + "' style='width:100%;'>";
+}
+
+function brahmaC(){
+    
+    document.getElementById("chickenInfo").innerHTML = bramInfo;
+    document.getElementById("chickenPic").innerHTML = "<img src='" + bramPic + "' style='width:100%;'>";
+}
+
+
+</script>
+
+
+<div id="myPage">
+
+    <div id="chickenPic">
+     
+    </div>
+
+    <div id="chickenInfo">
+    
+    </div>
+
+    <div id="chickenButtonContainer">
+        <button id="roadIslandR" class="myButton" onclick="roadIsland()">Road Island Red</button>
+        <button id="brahmaChick" class="myButton" onclick="brahmaC()">Brahma</button>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</html>
